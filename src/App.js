@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Description from "./Description";
+import Image from "./Image";
+import Name from "./Name";
+import Price from "./Price";
+import product from "./product";
 
 function App() {
+  const firstName = "Tlili Zohra";
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="card">
+        <div className="card-body">
+          <Name name={product.name} />
+          <Price price={product.price} />
+          <Description description={product.description} />
+          <Image image={product.image} />
+        </div>
+      </div>
+      <p className="greeting">
+        {firstName ? `Hello, ${firstName}` : "Hello, there!"}
+      </p>
+      {firstName && (
+        <img
+          className="profile-image"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgCVkSqyY_J8UE__kICij6G8W0do4hg4qw7w&s"
+          alt="Hello image"
+        />
+      )}
+    </>
   );
 }
 
