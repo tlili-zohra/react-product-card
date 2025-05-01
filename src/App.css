@@ -1,109 +1,44 @@
-/* Styling the body */
-body {
-  background-color: #f4f4f9;
-  font-family: "Arial", sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
-/* Centering the app content */
-.app {
-  width: 100%;
-  max-width: 900px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Card styling */
 .card {
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  width: 100%;
-  max-width: 600px;
-  margin-bottom: 20px;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Card body styling */
-.card-body {
-  padding: 50px;
-  padding-bottom: 50px;
-  text-align: center;
-  background: #fafafa;
-}
-
-/* Product name */
-.card-body h3 {
-  color: #333;
-  font-size: 1.8rem;
-  margin-bottom: 15px;
-  font-weight: bold;
-}
-
-/* Product price */
-.card-body p {
-  color: #2f302fb6;
-  font-size: 1.4rem;
-  margin-bottom: 20px;
-  font-weight: 600;
-}
-
-/* Product description */
-.card-body .description {
-  color: #111010;
-  font-size: 1rem;
-  margin-bottom: 20px;
-  line-height: 1.6;
-  text-align: justify;
-}
-
-/* Image Styling */
-.card-body img {
-  max-width: 100%;
+  background-color: #f8f9fa;
   border-radius: 10px;
-  height: auto;
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Greeting message */
+.card-body {
+  text-align: center;
+}
+
+img {
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+}
 .greeting {
-  color: #2926e2;
-  font-size: 1.2rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  background: linear-gradient(to right, #f0f0f0, #dbe9f4);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   margin-top: 20px;
+  transition: all 0.3s ease-in-out;
 }
 
-/* Custom button */
-.btn {
-  background-color: #3498db;
-  color: #fff;
-  border: none;
-  padding: 12px 30px;
-  font-size: 1rem;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+.greeting:hover {
+  color: #1abc9c;
+  background: #eafaf1;
 }
 
-.btn:hover {
-  background-color: #2980b9;
+.profile-img {
+  display: block;
+  margin: 20px auto;
+  object-fit: cover;
+  border-radius: 30%;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Profile image */
-.profile-image {
-  max-width: 120px;
-  height: auto;
-  margin-top: 20px;
+.profile-img:hover {
+  transform: scale(1.05);
 }
